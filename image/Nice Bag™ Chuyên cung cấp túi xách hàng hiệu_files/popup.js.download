@@ -1,0 +1,50 @@
+class popup{
+    constructor(id,title,ajax,load){
+        this.id = id;
+        this.title = title;
+        this.ajax = ajax;
+        this.load = load;
+        if(jQuery('.bg').length == 0){
+            jQuery('body').append('<div class="bg"></div>');
+        }
+        this.init();
+    }
+    init(){
+        var ths = this;
+        var res = '';
+        if(popup){
+            res+='<div class="popup popup-'+this.id+'">';
+                res+='<div class="popup-title">'+this.title;
+                res+=' <button class="btn btnClose"><i class="fas fa-times"></i></button>';
+                res+='</div>';
+                res+='<div class="popup-content">';
+                if(!this.ajax){
+                    res+=this.load;
+                }
+                res+='</div>';
+            res+='</div>';
+            res+='<div>';
+        }
+        jQuery('body').append(res).ready(function(){
+            jQuery('.btnClose').click(function(){
+                jQuery(this).parent().parent().fadeOut(200);
+            });
+
+            if(!ths.ajax){
+                ths.ajaxPopup(ths.id);
+            }
+
+        });
+    }
+    ajaxPopup(id){
+        jQuery.ajax({
+            url : this.load.url,
+            data : {
+                id : this.load.id
+            },
+            success : function(data){
+                jQuery('.popup-'+id+' .popup-content').html(data);
+            }
+        });
+    }
+}

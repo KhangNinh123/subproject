@@ -1,0 +1,155 @@
+function cartBox(){
+    jQuery.ajax({
+        url : ajaxurl+'?action=fwebCartList',
+        type : 'POST',
+        data : {},
+        success : function(data){
+            jQuery('.cart-box .cart-content').html(data);
+        }
+    });
+}
+
+jQuery(document).ready(function(){
+
+    jQuery(window).click(function(){
+        jQuery('.cart-box').fadeOut(200);
+    });
+
+    jQuery('.toc_content a').click(function(e){
+        e.preventDefault();
+        var top = jQuery(jQuery(this).attr('href')).offset();
+        jQuery("html, body").animate({ scrollTop: top.top-50 }, 600);
+    });
+
+    if(jQuery('.btnCartShow').length > 0){
+        jQuery.ajax({
+            url : ajaxurl+'?action=fwebCartCount',
+            beforeSend : function(){
+                jQuery('.btnCartShow .cart-num').html('...');
+            },
+            success : function(data){
+                jQuery('.btnCartShow .cart-num').html(data);
+            }
+        });
+    }
+
+    if(jQuery('.btnLoveBox').length > 0){
+        jQuery.ajax({
+            url : ajaxurl+'?action=fwebLoveCount',
+            beforeSend : function(){
+                jQuery('.btnLoveBox .cart-num').html('...');
+            },
+            success : function(data){
+                jQuery('.btnLoveBox .cart-num').html(data);
+            }
+        });
+    }
+
+    jQuery('.cart-box,.cart-box *').click(function(e){
+        e.stopPropagation();
+    })
+
+    jQuery('.btnCartShow').click(function(e){
+        e.stopPropagation();
+        if(jQuery('.cart-box').css('display') == 'none'){
+            cartBox();
+            jQuery('.cart-box').fadeIn(200);
+        }else{
+            jQuery('.cart-box').fadeOut(200);
+        }
+    });
+
+    jQuery('.btnLoveBox').click(function(e){
+        e.stopPropagation();
+        if(jQuery('.love-box').css('display') == 'none'){
+            jQuery.ajax({
+                url : ajaxurl+'?action=fwebLoveList',
+                type : 'POST',
+                data : {},
+                success : function(data){
+                    jQuery('.love-box .cart-content').html(data);
+                }
+            });
+            jQuery('.love-box').fadeIn(200);
+        }else{
+            jQuery('.love-box').fadeOut(200);
+        }
+    });
+
+    jQuery('.btnCloseCart').click(function(e){
+        e.stopPropagation();
+        jQuery(this).parent().parent().fadeOut(200);
+    });
+
+    jQuery('.love-store .ffw_button_link').click(function(e){
+        e.preventDefault();
+        var ths = this;
+        jQuery.ajax({
+            type: 'post',
+            url: ajaxurl,
+            data: {
+                'action' : 'fwebLoveAdd',
+                'id' : jQuery(this).attr('product_id')
+            },
+            beforeSend: function (response) {
+                jQuery(this).removeClass('added').addClass('loading');
+            },
+            complete: function (response) {
+                jQuery(this).addClass('added').removeClass('loading');
+            },
+            success: function (response) {
+                if (response.error && response.product_url) {
+                    window.location = response.product_url;
+                    return;
+                } else {
+                    jQuery(document.body).trigger('added_to_cart', [response.fragments, response.cart_hash, ths]);
+                }
+            }
+        });
+    });
+
+});
+
+(function ($) {
+
+    $(document).on('click', '.ffw_button.buy-store a', function (e) {
+        e.preventDefault();
+
+        var product_qty = 1,
+        product_id = $(this).attr('product_id'),
+        variation_id = 0;
+
+        var data = {
+            action: 'woocommerce_ajax_add_to_cart',
+            product_id: $(this).attr('product_id'),
+            quantity: product_qty,
+            variation_id: variation_id,
+        };
+        console.log(data);
+
+        $(document.body).trigger('adding_to_cart', [$(this), data]);
+
+        $.ajax({
+            type: 'post',
+            url: wc_add_to_cart_params.ajax_url,
+            data: data,
+            beforeSend: function (response) {
+                $(this).removeClass('added').addClass('loading');
+            },
+            complete: function (response) {
+                $(this).addClass('added').removeClass('loading');
+            },
+            success: function (response) {
+
+                if (response.error && response.product_url) {
+                    window.location = response.product_url;
+                    return;
+                } else {
+                   cartBox();
+                }
+            },
+        });
+
+        return false;
+    });
+})(jQuery);

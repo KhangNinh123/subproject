@@ -1,0 +1,121 @@
+class loopboxFilter{
+	constructor(){
+		this.etc();
+		this.event();
+	}
+	ajax(url,data,type,suc,before,err,async = true,header = {}){
+	    jQuery.ajax({
+	        url : url,
+	        data : data,
+	        async : async,
+	        headers: header,
+	        type : type,
+	        error : function () {
+	            if(err!=undefined) err();
+	        },
+	        beforeSend : function () {
+	            if(before!=undefined) before();
+	        },
+	        success : function(data){
+	            if(suc!=undefined) suc(data);
+	        }
+	    });
+	}
+	storeSettings(name,key){
+		var ths = this;
+		jQuery(name).change(function(){
+			var id = jQuery(this).attr('attr');
+			ths.ajax(ajaxurl+'?action=w3tStoreLoopboxOption',{
+				id : id,
+		        'key' : key,
+		        'value' : jQuery(this).find('option:selected').val()
+		    },'POST',function(data){
+		        if(data.status != 200){
+		            console.log('Lỗi updateOption');
+		        }
+		    });
+
+		});
+	}
+	storeTaxonomySettings(name,key){
+		var ths = this;
+		jQuery(name).change(function(){
+			var id = jQuery(this).attr('attr');
+			ths.ajax(ajaxurl+'?action=w3tStoreLoopboxOption',{
+				id : id,
+		        'key' : key,
+		        'value' : {
+		        	'taxonomy' : jQuery(this).find('option:selected').attr('taxonomy'),
+		        	'id' : jQuery(this).find('option:selected').val()
+		        },
+		    },'POST',function(data){
+		        if(data.status != 200){
+		            console.log('Lỗi updateOption');
+		        }
+		    });
+
+		});
+	}
+	eventLimit(key,obj){
+		this.ajax(ajaxurl+'?action=w3tStoreLoopboxOption',{
+	        id : jQuery('input.cls_pc').parent().parent().parent().attr('attr'),
+	        'key' : key,
+	        'value' : {
+	        	col : jQuery(obj).find('input.cls_'+key+'[typec="col"]').val(),
+	        	limit : jQuery(obj).find('input.cls_'+key+'[typec="limit"]').val()
+	        }
+	    },'POST',function(data){
+	        if(data.status != 200){
+	            console.log('Lỗi updateOption');
+	        }
+	    });
+	}
+	storeLimit(key){
+		var ths = this;
+		jQuery('input[name="'+key+'_col"]').on('change',function(){
+			ths.eventLimit(key,jQuery(this).parent().parent());
+		});
+
+		jQuery('input[name="'+key+'_limit"]').on('change',function(){
+			ths.eventLimit(key,jQuery(this).parent().parent());
+		});
+	}
+	etc(){
+		jQuery('.btn-limit').click(function(e){
+			e.preventDefault();
+			jQuery('.orderBox,.limitBox').fadeOut(200);
+			if(jQuery(this).parent().parent().find('.limitBox').css('display') == 'none'){
+				jQuery(this).parent().parent().find('.limitBox').fadeIn(200);
+			}else{
+				jQuery(this).parent().parent().find('.limitBox').fadeOut(200);
+			}
+		});
+
+		jQuery('.btn-order').click(function(e){
+			e.preventDefault();
+			jQuery('.orderBox,.limitBox').fadeOut(200);
+			if(jQuery(this).parent().parent().find('.orderBox').css('display') == 'none'){
+				jQuery(this).parent().parent().find('.orderBox').fadeIn(200);
+			}else{
+				jQuery(this).parent().parent().find('.orderBox').fadeOut(200);
+			}
+		});
+	}
+	event = function(){
+		
+		this.storeSettings('select[name="typeSpec"]','type');
+		this.storeTaxonomySettings('select[name="taxonomy"]','taxonomy');
+
+		this.storeSettings('select[name="orderby"]','orderby');
+		this.storeSettings('select[name="order"]','order');
+
+		this.storeLimit('pc');
+		this.storeLimit('tabled');
+		this.storeLimit('mobile');
+
+	}
+}
+
+jQuery(document).ready(function(){
+	new loopboxFilter();
+});

@@ -1,0 +1,173 @@
+.nav-bar ul {
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+}
+
+.nav-bar ul li .sub-menu {
+    display: none;
+}
+.nav-bar ul li {
+    flex: 1;position: relative;
+}
+.nav-bar ul li a{display: block;width: 100%;}
+.nav-bar ul.menu {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    min-height: 40px;
+    align-items: center;
+}
+.nav-bar ul li{
+    display: flex;
+    align-items: center;
+}
+.menu-item-has-children:after,.but-down-show,.navbar-item-mega:after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Pro";
+    margin-left: auto;
+    width: 40px;
+    text-align: center;
+    margin-left: auto;
+    display: inline-block;
+    padding: 10px;
+}
+.navbar-content .sub-menu .sub-menu {
+    top: 0px;
+    left: 100%;
+}
+.nav-bar-mobile.mt-type-1 .but-down-show{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.nav-bar-mobile.mt-type-1 ul li{flex-wrap: wrap;}
+.nav-bar .sub-menu {
+    display: none;
+    position: absolute;
+    white-space: nowrap;
+    border-bottom: none;
+    right: -1px;
+    z-index: 999999999999999;
+    top: 40px;
+}
+.navbar-content .sub-menu{
+    display: none;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 999999999999999;
+    top: 40px;
+}
+.nav-bar .sub-menu li{min-height: 40px;}
+.nav-bar ul.sub-menu ul.sub-menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    right: auto;
+}
+
+.nav-title-top .back {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border: none;
+    background: #ccc;
+    border-radius: 180px;
+    margin-right: 15px;
+    font-size: 10px;
+}
+
+.nav-title-top {
+    line-height: 50px;
+    height: 50px;
+    border-bottom: 4px solid #ccc;
+    margin: 0px -15px;
+    padding: 0px 15px;
+}
+
+.nav-bar-mobile ul {
+    padding: 0px;
+    list-style: none;
+}
+
+.nav-bar-mobile ul li{
+    position: relative;
+}
+
+.nav-bar-mobile .sub-menu,.nav-bar-mobile .sub-menu .sub-menu {
+    display: none;
+    position: fixed;
+    white-space: nowrap;
+    border-bottom: none;
+    left: 0px;
+    top: 50px;
+    padding: 0px 15px;
+    z-index: 99;
+    height: calc(100vh - 50px);
+}
+
+.btn-nav-bar {
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    float: right;
+    line-height: 40px;
+    display: none;
+}
+.nav-bar.nav-bar-doc ul,.navbar-content.nav-bar-doc ul{flex-wrap: wrap;}
+.nav-bar.nav-bar-doc ul li,.navbar-content.nav-bar-doc ul li{flex: 100%;}
+.navbar-content.nvs-doc .sub-menu li,.navbar-content.nvs-doc .sub-menu .sub-menu-child li{flex: 100%;}
+.navbar-content.nvs-doc .sub-menu,.navbar-content.nvs-doc .sub-menu .sub-menu-child{flex-wrap: wrap;text-align: left;}
+.nav-bar-mobile {
+    position: fixed;
+    z-index: 99999;
+    top: 0px;
+    height: 100%;
+    padding: 0px 15px;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .nav-bar.subtype-ngang .sub-menu li{flex: 1;}
+
+    .nav-bar.nvsub-phai .sub-menu,.navbar-content.nvsub-phai .sub-menu{
+        right: auto;left: 100%;top: 0px;
+    }
+    .nav-bar.nvsub-trai .sub-menu,.navbar-content.nvsub-trai .sub-menu{
+        left: auto;right: 100%;top: 0px;
+    }
+    .nav-bar.nvsub-tren .sub-menu,.navbar-content.nvsub-tren .sub-menu{
+        left: 0px;right: auto;top: -100%;
+    }
+    .nav-bar.nvsub-duoi .sub-menu,.navbar-content.nvsub-duoi .sub-menu{
+        left: 0px;right: auto;top: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 980px) {
+    
+    .nav-bar.nav-bar-mobile li {
+        flex: 100%;
+    }
+    .btn-nav-bar{display: block;}
+    .nav-bar.nav-bar-ngang ul{    flex-wrap: wrap;}
+
+}
+@media only screen and (min-device-width: 0px) and (max-device-width: 1024px) and (orientation:landscape) {
+    .nav-bar .menu-item-has-children:after,.navbar-item-mega:after{display: none;}
+}
+
+@media only screen and (max-width: 650px) {
+    .nav-bar-mobile ul{
+        flex-wrap:wrap;
+    }
+    
+    .nav-bar-mobile.mt-type-2,.nav-bar-mobile.mt-type-2 .sub-menu,.nav-bar-mobile.mt-type-2 .sub-menu .sub-menu{width: 80%;right: 0px;position: fixed;left: auto;}
+    .menu-item-has-children:after,.navbar-item-mega:after{display: none;}
+}

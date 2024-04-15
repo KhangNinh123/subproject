@@ -1,0 +1,43 @@
+jQuery(document).ready(function(){
+    
+    jQuery('.iframe-box img').height(jQuery('.iframe-box img').height());
+    
+    if(jQuery(window).width() > 480){
+        jQuery('.woo-variation-gallery-wrapper').removeClass('woo-variation-gallery-wrapper');
+    }
+    
+    
+    jQuery('.search-box').click(function(){ jQuery(this).fadeOut(200); });
+    jQuery('.search-box .container,.cart-box').click(function(e){ e.stopPropagation(); });
+    jQuery('.cart-box .cart-box-close').click(function(e){ e.stopPropagation();jQuery('.cart-box').fadeOut(200); });
+    
+    jQuery(window).scroll(function(){
+        if(jQuery(window).scrollTop() > 100){
+            jQuery('.ffw_header').css({'position':'fixed'});
+            jQuery('.header-bottom').fadeOut(200);
+        }else{
+            jQuery('.ffw_header').css({'position':'relative'});
+            jQuery('.header-bottom').fadeIn(200);
+        }
+    });
+    
+    jQuery('.list-filter .fa').click(function(){
+        if(jQuery('.fsub-menu').css('display') == 'none'){
+            jQuery('.fsub-menu').fadeIn(200);
+        }else{
+            jQuery('.fsub-menu').fadeOut(200);
+        }
+    });
+    
+});
+
+
+
+jQuery(window).on('load',function(){
+    jQuery('.woocommerce-variation-description').fadeOut(200);
+    
+    if(jQuery('.woocommerce-variation-description iframe').length > 0){
+        jQuery('.woo-variation-gallery-slider-2').append('<div class="wvg-gallery-image">'+jQuery('.woocommerce-variation-description').html()+'</div>');
+    }
+});
+
