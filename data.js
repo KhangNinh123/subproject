@@ -13,9 +13,9 @@ let sp8 = { masp: 8, hang: "DIOR", hinhanh: 'image/Dior-30-Montaigne-bag-full-bl
 let sp9 = { masp: 9, hang: "DIOR", hinhanh: 'image/Dior-30-Montaigne-box-bag-white-1-300x300.jpg', tensp: "", soluong: 1, dongia: "299.000.000VNĐ", mota: 'Là một chiếc túi xách thuộc dòng sản phẩm dior 30 montaigne, túi xách nữ Dior 30 Montaigne Bag Blue Dior Oblique Jacquard đã đốn tim của nhiều chị em phụ nữ từ những ngày đầu tiên ra mắt. Được lấy cảm hứng từ kiến trúc tòa nhà lịch sử của thương hiệu Dior nằm tại vị trí 30 đại lộ Montaigne, thủ đô Paris, Pháp đội ngũ thiết kế Dior đã cho ra một mẫu thiết kế mang đậm tinh thần đương đại. Sở hữu cấu trúc hình hộp chữ nhật chắc chắn, chiếc túi xách dior này mang đúng thông điệp nữ quyền mà thương hiệu túi Dior muốn truyền tải. Họa tiết Oblique thổ cẩm chữ D in chìm lấy cảm hứng từ chiếc túi Dior Saddle đình đám trước đó được rất nhiều chị em ưa thích bởi vẻ đẹp cổ điển không kém phần retro quyến rũ mà nó mang lại.' }
 let dssp = [sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9]
 
-let spm1 = { masp: 1, loai: "Tui GUCCI ATTACHE SMALL SHOULDE ", hinhanh: "image/Gucci-Attache-Small-Shoulder-Bag-In-White-Leather-1.jpg", ngaythang: "15/05/2024", tensp: "Tui Gucci", mota: " Là một chiếc túi xách thuộc dòng sản phẩm dior 30 montaigne, túi xách nữ Dior 30 Montaigne Bag Blue Dior Oblique Jacquard đã đốn tim của nhiều chị em phụ nữ từ những ngày đầu tiên ra mắt. Được lấy cảm hứng từ kiến trúc tòa nhà lịch sử của thương hiệu Dior nằm tại vị trí 30 đại lộ Montaigne, thủ đô Paris, Pháp đội ngũ thiết kế Dior đã cho ra một mẫu thiết kế mang đậm tinh thần đương đại. Sở hữu cấu trúc hình hộp chữ nhật chắc chắn, chiếc túi xách dior này mang đúng thông điệp nữ quyền mà thương hiệu túi Dior muốn truyền tải. Họa tiết Oblique thổ cẩm chữ D in chìm lấy cảm hứng từ chiếc túi Dior Saddle đình đám trước đó được rất nhiều chị em ưa thích bởi vẻ đẹp cổ điển không kém phần retro quyến rũ mà nó mang lại...", dongia: "269.000.000vnđ" }
-let spm2 = { masp: 2, loai: "Tui Chanel", hinhanh: "image/tui-chanel-19-bag-Brown-1-300x300.jpg", ngaythang: "20/03/2024", tensp: "Kem Dưỡng Mắt Giảm Quầng Thâm, Chống Lão Hóa Some By Mi Retinol Intense Advanced Triple Action Eye Cream 30ml", mota: "Là một chiếc túi xách thuộc dòng sản phẩm dior 30 montaigne, túi xách nữ Dior 30 Montaigne Bag Blue Dior Oblique Jacquard đã đốn tim của nhiều chị em phụ nữ từ những ngày đầu tiên ra mắt. Được lấy cảm hứng từ kiến trúc tòa nhà lịch sử của thương hiệu Dior nằm tại vị trí 30 đại lộ Montaigne, thủ đô Paris, Pháp đội ngũ thiết kế Dior đã cho ra một mẫu thiết kế mang đậm tinh thần đương đại. Sở hữu cấu trúc hình hộp chữ nhật chắc chắn, chiếc túi xách dior này mang đúng thông điệp nữ quyền mà thương hiệu túi Dior muốn truyền tải. Họa tiết Oblique thổ cẩm chữ D in chìm lấy cảm hứng từ chiếc túi Dior Saddle đình đám trước đó được rất nhiều chị em ưa thích bởi vẻ đẹp cổ điển không kém phần retro quyến rũ mà nó mang lại..", dongia: "Giá: 289.000vnđ" }
-let spm3 = { masp: 3, loai: "TUI DIOR ", hinhanh: "image/30-montaigne-chain-bag-with-handle-bag-1-300x300.jpg", ngaythang: "12/05/2024", tensp: "Nước Tẩy Trang Garnier Dành Cho Da Dầu Và Mụn 400ml Micellar Cleansing Water For Oily & Acne-Prone Skin New", mota: ".", dongia: "Giá: 139.000.00vnđ" }
+let spm1 = { masp: 1, loai: "Tui GUCCI ATTACHE SMALL SHOULDE ", hinhanh: "image/Gucci-Attache-Small-Shoulder-Bag-In-White-Leather-1.jpg", ngaythang: "15/03/2024", tensp: "Tui Gucci Bag in White Leader 1", mota: " Là một chiếc túi xách thuộc dòng sản phẩm dior 30 montaigne, túi xách nữ Dior 30 Montaigne Bag Blue Dior Oblique Jacquard đã đốn tim của nhiều chị em phụ nữ từ những ngày đầu tiên ra mắt. Được lấy cảm hứng từ kiến trúc tòa nhà lịch sử của thương hiệu Dior nằm tại vị trí 30 đại lộ Montaigne, thủ đô Paris, Pháp đội ngũ thiết kế Dior đã cho ra một mẫu thiết kế mang đậm tinh thần đương đại. Sở hữu cấu trúc hình hộp chữ nhật chắc chắn, chiếc túi xách dior này mang đúng thông điệp nữ quyền mà thương hiệu túi Dior muốn truyền tải. Họa tiết Oblique thổ cẩm chữ D in chìm lấy cảm hứng từ chiếc túi Dior Saddle đình đám trước đó được rất nhiều chị em ưa thích bởi vẻ đẹp cổ điển không kém phần retro quyến rũ mà nó mang lại...", dongia: "269.000.000vnđ" }
+let spm2 = { masp: 2, loai: "Tui Chanel", hinhanh: "image/tui-chanel-19-bag-Brown-1-300x300.jpg", ngaythang: "20/03/2024", tensp: "Túi Chanel 19 Bag Brown", mota: "Là một chiếc túi xách thuộc dòng sản phẩm dior 30 montaigne, túi xách nữ Dior 30 Montaigne Bag Blue Dior Oblique Jacquard đã đốn tim của nhiều chị em phụ nữ từ những ngày đầu tiên ra mắt. Được lấy cảm hứng từ kiến trúc tòa nhà lịch sử của thương hiệu Dior nằm tại vị trí 30 đại lộ Montaigne, thủ đô Paris, Pháp đội ngũ thiết kế Dior ..", dongia: "Giá: 9.000.000vnđ" }
+let spm3 = { masp: 3, loai: "TUI DIOR ", hinhanh: "image/30-montaigne-chain-bag-with-handle-bag-1-300x300.jpg", ngaythang: "12/03/2024", tensp: "Túi Dior Hand Bag 1", mota: ".", dongia: "Giá: 139.000.00vnđ" }
 let dsspMoi = [spm1, spm2, spm3]
 
 
@@ -41,188 +41,183 @@ let makhachang = 0
 
 // Hàm hiển thị giao diện web
 
+
 function hienthigiaodien() {
-    let header = " <div class='container'> " +
-        " <div class='row'>" +
-        " <div class='col-sm-4'> " +
-        " <div class='mangxh float-sm-left text-xs-center text-sm-left'> " +
-        " <a href='https://www.facebook.com'>" + "<i class='fa fa-facebook'>" + "</i>" + "</a> " +
-        " </div> " +
-        "<div class='lienhe'> " +
-        "Call: 0852606710 " +
-        " </div> " +
-        " </div> " +
-        "  <div class='col-sm-4'> " +
-        " <div class='timkiem' id='timkiem'> " +
-        "<input type='search' placeholder='Search' style='width: 400px; height: 30px;' > " +
-        " </div>" +
-        "</div> " +
-
-        "<div class='col-sm-4'> " +
-        " <div class='lienhe openingtop float-sm-right text-sm-left text-xs-center'> " +
-        " Thời gian mở cửa: 8:00 - 22:00" +
-        "</div> " +
-        "</div> " +
-
-        "</div> " +
-
-        "</div>"
-
-
-
-
-    let menu = "<nav class='navbar navbar-light bg-faded fontroboto'>" +
-        "<div class='container'>" +
-        " <button class='navbar-toggler hidden-sm-up' type='button' data-toggle='collapse' data-target='#mtren'>" +
-
-        "</button>" +
-        "<div class='collapse navbar-toggleable-xs' id='mtren'>" +
-        " <a class='navbar-brand text-xs-center text-sm-left' href='home.html'> <a href='home.html' style='text-decoration: none'>  <div style='display: flex'>" +
-        "<img src='image/logo.png' alt='' style=' margin-top : 10px ;width: 150px; height: 100px;'>"+
-        "<h1 style='color: rgb(255, 110, 80); padding-top: 40px'>" + "Kn-TuiXachXin" + "</h1> </div> </a>" +
-        " </a>" +
-
-        " <ul class='nav navbar-nav float-sm-right'>" +
-        "   <li class='nav-item active'>" +
-        "   <a class='nav-link' href='home.html'>" + "Trang chủ" + "</a>" +
-        " </li>" +
-        " <li class='nav-item'>" +
-        "  <a class='nav-link' href='danhsach.html'>" + "Tất cả" + "</a>" +
-        "</li>" +
-        " <li class='nav-item'>" +
-        "  <a class='nav-link' href='Gucci.html'>" + "Gucci" + "</a>" +
-        "</li>" +
-        "<li class='nav-item'>" +
-        "<a class='nav-link' href='Chanel.html'>" + "Chanel" + "</a>" +
-        " </li>" +
-        " <li class='nav-item'>" +
-        " <a class='nav-link' href='Dior.html'>" + "Dior" + "</a>" +
-        "</li>" +
-        "<li class='nav-item'>" +
-        "<a class='nav-link' href='news.html'>" + "Thông tin" + "</a>" +
-        "</li>" +
-        " <li class='nav-item'>" +
-        " <a class='nav-link' href='gioithieu.html'>" + "Giới thiệu" + "</a>" +
-        "</li>" +
-        " <li class='nav-item'>" +
-        " <a class='nav-link' href='sitemap.html'>" + "Site Map" + "</a>" +
-        "</li>" +
-        " <li class='nav-item dangnhap'>" +
-        "<a class='nav-link btn btn-warning'  id='dangky'>" + "Đăng nhập/Đăng ký" + "</a>" +
-        " </li>" +
-        " <li class='nav-item cart'>" +
-        " <a href='giohang.html' class='nav-link'>" + "<i class='fa fa-shopping-cart'>" + "</i>" + "</a>" +
-        " </li>" +
-        "</ul>" +
-
-        "</div>" +
-        "</div>" +
-
-        " </nav>"
-
-    let footer = "<div class='container'>" +
-        "<div class='row'>" +
-        "<div class='col-sm-3 cot1'>" +
-        " <h1>" + "KN-TUIXACHXIN" + "</h1>" +
-        "<div class='motdong'>" +
-        " <i class='fa fa-paper-plane-o'>" + "</i>" +
-        " <span class='textmotdong'>" + "Địa chỉ: 123/22 nguyen xi " + "</span>" +
-        " </div>" +
-        "<div class='motdong'>" +
-        " <i class='fa fa-phone'>" + "</i>" +
-        " <span class='textmotdong'>" + "Số điện thoại: 0852606710</span>" +
-        "  </div>" +
-        "<div class='motdong'>" +
-        "<i class='fa fa-envelope-o'>" + "</i>" +
-        "<span class='textmotdong'>" + "Email: ninhtrinh@gmail.com</span>" +
-        " </div>" +
-        " </div>" +
-
-        " <div class='col-sm-3 cot3'>" +
-        " <h2 class='tdfooter'>" + "HỖ TRỢ THANH TOÁN" + "</h2>" +
-        " <ul>" +
-        "  <li>" +
-        "    <p>" + "<i class='fa fa-cc-mastercard mr-2'>" + "</i>" + "MasterCard" + "</p>" +
-        "  </li>" +
-        " <li>" +
-        "  <p>" + "<i class='fa fa-cc-visa mr-2'>" + "</i>" + "Visa" + "</p>" +
-        "  </li>" +
-        "  <li>" +
-        "    <p>" + "<i class='fa fa-credit-card mr-2'>" + "</i>" + "Thẻ tín dụng" + "</p>" +
-        "  </li>" +
-        "<li>" +
-        "  <p>" + "<i class='fa fa-money mr-2'>" + "</i>" + "Tiền mặt" + "</p>" +
-        " </li>" +
-        " </ul>" +
-        " </div>" +
-
-        "<div class='col-sm-3 cot4'>" +
-        "   <h2 class='tdfooter'>" + "Opening Hours" + "</h2>" +
-        " <div class='opening1'>" +
-        "    <div class='phai float-xs-right'>" + "8:00am - 22:00pm" + "</div>" +
-        "     <div class='trai'>" + "Everyday" + "</div>" +
-        " </div>" +
-
-        "</div>" +
-        " </div>" +
-        " </div>"
-
-
-    let modal = "<div class='modal-dialog'>" +
-        "<div class='modal-content'>" +
-        " <div class='modal-header fontdancing tieude1' >" +
-        " <h2>Đăng nhập vào KN-TUIXACHXIN</h2>" +
-        " </div>" +
-        "<div class='modal-body'>" +
-        "<form class='login100-form validate-form'>" +
-        "<div class='form-group col-sm-12 ' style='display: flex'>" +
-        " <div class='col-sm-4'>" +
-        "  <label for=''>Tên đăng nhập:</label>" +
-        " </div>" +
-        " <div class='col-sm-8'>" +
-        "<input type='text' class='form-control' id='checkusername' >" +
-        " <div>" +
-        "<span id='errorcheckusername' class='text-danger'></span>" +
-        " </div>" +
-        "</div>" +
-
-        "</div>" +
-
-        " <div class='formgroup col-sm-12 ' style='display: flex' >" +
-        " <div class='col-sm-4'> " +
-        "  <label for='' >Mật khẩu:</label >" +
-        " </div>" +
-        "<div class='col-sm-8'>" +
-        " <input type='text' class='form-control' id='checkpassword'>" +
-        " <div>" +
-        "  <span id='errorcheckpassword' class='text-danger'></span>" +
-        "  </div>" +
-        " </div>" +
-
-        " </div>" +
-
-        "<div class='p-1'>" +
-        "  <button type='button' class='formgroup col-sm-12' style='background-color: rgba(255,165,1,255); border-radius: 5px; padding: 7px;' id='dangnhap'>ĐĂNG NHẬP</button>" +
-
-        "  </div>" +
-        " <div class='formgroup col-sm-12 '>" +
-        "  <p>Chưa có tài khoản? <a href='signup.html'>Đăng ký ngay</a></p>" +
-        "  </div>" +
-
-        "   </form>" +
-        " </div>" +
-        "</div>" +
-        "</div>"
-
-    $("#header").append(header)
-    $("#menu").append(menu)
-    $("#footer").append(footer)
-    $("#myModal").append(modal)
-
+    let header = `<div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="mangxh float-sm-left text-xs-center text-sm-left">
+                    <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="ins" style="margin-top: 1px;">
+                    <a href="https://www.instagram.com"><i class="fa fa-instagram" style="color: white;"></i></a>
+                </div>
+                
+            </div>
+            <div class="col-sm-3">
+                <div class="timkiem" id="timkiem">
+                    <input type="search" placeholder="Nhập vào từ khóa tìm kiếm " style="width: 280px; height: 30px; background-color: white; color: black;">
+                </div>
+            </div>
+            <div class="col-sm-1">
+                <button class="btn btn-primary" style="background-color: white; color: black; margin-bottom:3px; font-size:10px; border-radius: 0;" onclick="search()">Tìm kiếm</button>
+            </div>
+            <div class="col-sm-6">
+                <div class="lienhe openingtop float-sm-right text-sm-left text-xs-center">
+                    Thời gian mở cửa: 8:00 - 22:00
+                </div>
+                <div class="lienhe telephone float-sm-right text-sm-left text-xs-center">
+                    HotLine: 0852606710
+                </div>
+            </div>
+        </div>
+    </div>`;
+    
+    let menu = `<nav class="navbar navbar-light bg-faded fontroboto">
+        <div class="container">
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#mtren"></button>
+            <div class="collapse navbar-toggleable-xs" id="mtren">
+                <a class="navbar-brand text-xs-center text-sm-left" href="home.html">
+                    <a href="home.html" style="text-decoration: none">
+                        <div style="display: flex">
+                            <img src="image/logo.png" alt="" style="margin-top: 10px; width: 150px; height: 100px;">
+                            <h1 style="color: rgb(255, 110, 80); padding-top: 40px">Kn-TuiXachXin</h1>
+                        </div>
+                    </a>
+                </a>
+                <ul class="nav navbar-nav float-sm-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="danhsach.html">Tất cả</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gucci.html">Gucci</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Chanel.html">Chanel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Dior.html">Dior</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">Thông tin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gioithieu.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sitemap.html">Site Map</a>
+                    </li>
+                    <li class="nav-item dangnhap">
+                        <a class="nav-link btn btn-warning" id="dangky">Đăng nhập/Đăng ký</a>
+                    </li>
+                    <li class="nav-item cart">
+                        <a href="giohang.html" class="nav-link"><i class="fa fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>`;
+    
+    let footer = `<div class="container">
+        <div class="row">
+            <div class="col-sm-3 cot1">
+                <h1>KN-TUIXACHXIN</h1>
+                <div class="motdong">
+                    <i class="fa fa-paper-plane-o"></i>
+                    <span class="textmotdong">Địa chỉ: 123/22 nguyen xi</span>
+                </div>
+                <div class="motdong">
+                    <i class="fa fa-phone"></i>
+                    <span class="textmotdong">Số điện thoại: 0852606710</span>
+                </div>
+                <div class="motdong">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="textmotdong">Email: ninhtrinh@gmail.com</span>
+                </div>
+            </div>
+            <div class="col-sm-3 cot3">
+                <h2 class="tdfooter">HỖ TRỢ THANH TOÁN</h2>
+                <ul>
+                    <li>
+                        <p><i class="fa fa-cc-mastercard mr-2"></i>MasterCard</p>
+                    </li>
+                    <li>
+                        <p><i class="fa fa-cc-visa mr-2"></i>Visa</p>
+                    </li>
+                    <li>
+                        <p><i class="fa fa-credit-card mr-2"></i>Thẻ tín dụng</p>
+                    </li>
+                    <li>
+                        <p><i class="fa fa-money mr-2"></i>Tiền mặt</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3 cot4">
+                <h2 class="tdfooter">Opening Hours</h2>
+                <div class="opening1">
+                    <div class="phai float-xs-right">8:00am - 22:00pm</div>
+                    <div class="trai">Everyday</div>
+                </div>
+            </div>
+        </div>
+    </div>`;
+    
+    let modal = `<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header fontdancing tieude1">
+                <h2>Đăng nhập vào KN-TUIXACHXIN</h2>
+            </div>
+            <div class="modal-body">
+                <form class="login100-form validate-form">
+                    <div class="form-group col-sm-12" style="display: flex">
+                        <div class="col-sm-4">
+                            <label for="">Tên đăng nhập:</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="checkusername">
+                            <div>
+                                <span id="errorcheckusername" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formgroup col-sm-12" style="display: flex">
+                        <div class="col-sm-4">
+                            <label for="">Mật khẩu:</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="checkpassword">
+                            <div>
+                                <span id="errorcheckpassword" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-1">
+                        <button type="button" class="formgroup col-sm-12" style="background-color: rgba(255,165,1,255); border-radius: 5px; padding: 7px;" id="dangnhap">ĐĂNG NHẬP</button>
+                    </div>
+                    <div class="formgroup col-sm-12">
+                        <p>Chưa có tài khoản? <a href="signup.html">Đăng ký ngay</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>`;
+    
+    $("#header").append(header);
+    $("#menu").append(menu);
+    $("#footer").append(footer);
+    $("#myModal").append(modal);
 }
 
 
-
+function search() {
+    let searchInput = document.querySelector('input[type="search"]').value.toLowerCase();
+    let searchResults = ds.filter(item => item.tensp.toLowerCase().includes(searchInput));
+    localStorage.setItem("searchResults", JSON.stringify(searchResults));
+    window.location.href = "timkiemsanpham.html";
+}
 
 
 // Hàm lưu mã Sp và localStorage
