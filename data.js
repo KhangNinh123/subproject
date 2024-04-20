@@ -77,7 +77,7 @@ function hienthigiaodien() {
         <div class="container">
             <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#mtren"></button>
             <div class="collapse navbar-toggleable-xs" id="mtren">
-                <a class="navbar-brand text-xs-center text-sm-left" href="home.html">
+                <a class="navbar-brand text-xs-center text-sm-left" href="index.html">
                     <a href="home.html" style="text-decoration: none">
                         <div style="display: flex">
                             <img src="image/logo.png" alt="" style="margin-top: 10px; width: 150px; height: 100px;">
@@ -87,7 +87,7 @@ function hienthigiaodien() {
                 </a>
                 <ul class="nav navbar-nav float-sm-right">
                     <li class="nav-item active">
-                        <a class="nav-link" href="home.html">Trang chủ</a>
+                        <a class="nav-link" href="index.html">Trang chủ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="danhsach.html">Tất cả</a>
@@ -551,7 +551,7 @@ $(document).ready(function () {
 
         $("#myModal").modal("hide")
         alert("Đăng nhập thành công")
-        window.location = "home.html"
+        window.location = "index.html"
         return true
     })
 
