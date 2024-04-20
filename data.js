@@ -190,45 +190,89 @@ function hienthigiaodien() {
         </div>
     </div>`;
     
-    let modal = `<div class="modal-dialog">
+    let modal = `
+    <style>
+     
+    
+      /* Modal content styling */
+      .modal-content {
+        border-radius: 15px;
+      }
+    
+      /* Modal header styling */
+      .modal-header {
+        background-color: green; /* Primary color */
+        color: #fff; /* White text */
+        text-align: center;
+        padding: 20px 0;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+    
+      /* Modal body styling */
+      .modal-body {
+        padding: 20px;
+      }
+    
+      /* Text input styling */
+      .form-control {
+        border-radius: 5px;
+        border: 1px solid #ced4da; /* Light gray border */
+      }
+    
+      /* Submit button styling */
+      #dangnhap {
+        background-color: green; /* Orange color */
+        border: none;
+        border-radius: 5px;
+        color: #fff; /* White text */
+        padding: 7px;
+        cursor: pointer;
+      }
+    
+      /* Error message styling */
+      .text-danger {
+        font-size: 14px;
+        color: red;
+      }
+    
+      /* Link styling */
+      .modal-body a {
+        color: #007bff; /* Primary color */
+      }
+    </style>
+    <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header fontdancing tieude1">
-                <h2>Đăng nhập vào KN-TUIXACHXIN</h2>
+                <h2>Đăng nhập</h2>
             </div>
             <div class="modal-body">
                 <form class="login100-form validate-form">
-                    <div class="form-group col-sm-12" style="display: flex">
-                        <div class="col-sm-4">
-                            <label for="">Tên đăng nhập:</label>
-                        </div>
-                        <div class="col-sm-8">
-                            <input type="text" class="form-control" id="checkusername">
-                            <div>
-                                <span id="errorcheckusername" class="text-danger"></span>
-                            </div>
+                    <div class="form-group">
+                        <label for="checkusername">Tên đăng nhập:</label>
+                        <input type="text" class="form-control" id="checkusername">
+                        <div>
+                            <span id="errorcheckusername" class="text-danger"></span>
                         </div>
                     </div>
-                    <div class="formgroup col-sm-12" style="display: flex">
-                        <div class="col-sm-4">
-                            <label for="">Mật khẩu:</label>
-                        </div>
-                        <div class="col-sm-8">
-                            <input type="text" class="form-control" id="checkpassword">
-                            <div>
-                                <span id="errorcheckpassword" class="text-danger"></span>
-                            </div>
+                    <div class="form-group">
+                        <label for="checkpassword">Mật khẩu:</label>
+                        <input type="password" class="form-control" id="checkpassword">
+                        <div>
+                            <span id="errorcheckpassword" class="text-danger"></span>
                         </div>
                     </div>
-                    <div class="p-1">
-                        <button type="button" class="formgroup col-sm-12" style="background-color: rgba(255,165,1,255); border-radius: 5px; padding: 7px;" id="dangnhap">ĐĂNG NHẬP</button>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-primary btn-block" id="dangnhap">ĐĂNG NHẬP</button>
                     </div>
-                    <div class="formgroup col-sm-12">
+                    <div class="form-group text-center">
                         <p>Chưa có tài khoản? <a href="signup.html">Đăng ký ngay</a></p>
                     </div>
                 </form>
             </div>
         </div>
     </div>`;
+    
     
     $("#header").append(header);
     $("#menu").append(menu);
