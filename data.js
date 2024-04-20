@@ -2,7 +2,7 @@
 // Khai báo dữ liệu 
 
 let sp1 = { masp: 1, hang: "GUCCI", hinhanh: 'image/Gucci-Diana-small-tote-bag-black-1.jpg', tensp: "Tui Gucci Diana Small Tote Bag Black", soluong: 1, dongia: "8.709.000VNĐ", mota: 'Gucci Diana Small Tote Bag Black là một tác phẩm thời trang độc đáo, mang đến sự kết hợp tinh tế giữa vẻ đẹp cổ điển và sự hiện đại. Với màu đen bí ẩn, chiếc túi tote này không chỉ là một phụ kiện thời trang mà còn là biểu tượng của sự thanh lịch và cá tính.' }
-let sp2 = { masp: 2, hang: "GUCCI", hinhanh: 'image/Gucci-Diana-Small-Tote-Bag-blue-1.jpg', tensp: "Tui Gucci Diana Small Tote Bag Blue", soluong: 1, dongia: "369.000VNĐ", mota: 'Kem chống nắng Innisfree Tone Up No Sebum Sunscreen SPF50 50ml là kem chống nắng nâng tông vật lý của Innisfree. Kem chống nắng với finish ráo mịn đẹp mê hồn cho những cô nàng da dầu, nhạy cảm. Kem chống nắng thích hợp để che đi khuyết điểm nhỏ trên gương mặt và giúp làn da tươi tắn, tràn đầy sức sống hơn.' }
+let sp2 = { masp: 2, hang: "GUCCI", hinhanh: 'image/Gucci-Diana-Small-Tote-Bag-blue-1.jpg', tensp: "Tui Gucci Diana Small Tote Bag Blue", soluong: 1, dongia: "369.000VNĐ", mota: '.' }
 let sp3 = { masp: 3, hang: "GUCCI", hinhanh: 'image/Gucci-Diana-small-tote-bag-brown-1.jpg', tensp: "Tui Gucci Diana Small Tote Bag Brown", soluong: 1, dongia: "1.229.000VNĐ", mota: 'Tinh chất chứa chiết xuất từ vỏ quýt Hallabong chăm sóc các nhược điểm trên da và giúp da thêm căng mịn và sáng ngời! Dẫn xuất vitamin B3 cung cấp chăm sóc sắc tố melanin chuyên sâu. Dẫn xuất vitamin C và dẫn xuất vitamin B5 chăm sóc cho làn da khỏe mạnh. Axit hyaluronic cung cấp độ ẩm.' }
 let sp4 = { masp: 4, hang: "CHANEL", hinhanh: 'image/chanel-19-handbag-light-pink-1-300x300.jpg', tensp: "Tui canel handbag light pink", soluong: 1, dongia: "359.000VNĐ", mota: 'Chiếc túi Chanel 19 Bag Brown thuộc dòng sản phẩm túi chanel 19 đến từ thương hiệu Chanel. Đây chính là một trong những bom tấn đình đám của nhà mốt này. Với thiết kế đẹp đến say đắm túi xách Chanel luôn là những sản phẩm “hot hit” nhất mọi thời đại. Tiếp tục là thiết kế cổ điển với điểm nhấn là chốt khóa logo 2 chữ CC đan vào nhau túi xách chanel 19 toát lên một vẻ đẹp cực kỳ cuốn hút, làm nao lòng các tín đồ thời trang trên thế giới..' }
 let sp5 = { masp: 5, hang: "CHANEL", hinhanh: 'image/CHANEL-19-SHOPPING-BAG-1-300x300.jpg', tensp: "Tui chanel handbag light pink", soluong: 1, dongia: "289.000.00VNĐ", mota: 'Chiếc túi Chanel 19 Bag Brown thuộc dòng sản phẩm túi chanel 19 đến từ thương hiệu Chanel. Đây chính là một trong những bom tấn đình đám của nhà mốt này. Với thiết kế đẹp đến say đắm túi xách Chanel luôn là những sản phẩm “hot hit” nhất mọi thời đại. Tiếp tục là thiết kế cổ điển với điểm nhấn là chốt khóa logo 2 chữ CC đan vào nhau túi xách chanel 19 toát lên một vẻ đẹp cực kỳ cuốn hút, làm nao lòng các tín đồ thời trang trên thế giới.' }
@@ -103,8 +103,8 @@ function hienthigiaodien() {
             <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#mtren"></button>
             <div class="collapse navbar-toggleable-xs" id="mtren">
                 <a class="navbar-brand text-xs-center text-sm-left" href="index.html">
-                    <a href="home.html" style="text-decoration: none">
-                        <div style="display: flex">
+                    <a href="index.html" style="text-decoration: none">
+                        <div style="display: flex; justify-content: center; align-items: center;">
                             <img src="image/logo.png" alt="" style="margin-top: 10px; width: 150px; height: 100px;">
                             <h1 style="color: rgb(255, 110, 80); padding-top: 40px">Kn-TuiXachXin</h1>
                         </div>
@@ -115,7 +115,7 @@ function hienthigiaodien() {
                         <a class="nav-link" href="index.html">Trang chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="danhsach.html">Tất cả</a>
+                        <a class="nav-link" href="danhsach.html">Các sản phẩm hiện có </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Gucci.html">Gucci</a>
@@ -254,22 +254,22 @@ function setMaspm(masp) {
 }
 
 
-// Hàm hiển thị danh sách sản phẩm
 function hienthiDSSP(sp) {
-    let temp = "<div class='col-sm-4 ' >" +
-        "  <div class='motspchuan'> " +
-        " <a href='chitietsanpham.html' class='duoi' onclick='setMasp(" + sp.masp + ")''> " +
-        "  <img  src='" + sp.hinhanh + "' alt='' >" +
-        "   <p class='price_prod'>" +
-        "  <span class='price'>" + sp.dongia + "</span>" +
-        " </p>" +
-        " <span> " + sp.tensp + "</span>" +
-        " </a>" +
-        " </div>" +
-        "</div>"
+    let temp = `
+        <div class="col-sm-4">
+            <div class="motspchuan">
+                <a href="chitietsanpham.html" class="duoi" onclick="setMasp(${sp.masp})">
+                    <img src="${sp.hinhanh}" alt="">
+                    <p class="price_prod">
+                        <span class="price">${sp.dongia}</span>
+                    </p>
+                    <span>${sp.tensp}</span>
+                </a>
+            </div>
+        </div>
+    `;
 
-    $("#danhsachsanpham").append(temp)
-
+    $("#danhsachsanpham").append(temp);
 }
 
 // Hàm hiển thị chi tiết sản phẩm
@@ -401,84 +401,69 @@ function hienthicacsanpham(sp) {
 }
 // Hàm hiển thị sản phẩm từng loại
 function HienThiDanhSachTungLoaiSanPham(sp) {
-
-    let temp1 = "<ul class='pagination justify-content-center bg-light'>" +
-        "<li class='page-item disabled'>" +
-        " <a class='page-link' href='#' tabindex='-1'>Về trước</a>" +
-        "</li>" +
-        "<li class='page-item'>" + "<a class='page-link' href='#'>1</a></li>" +
-        " <li class='page-item'>" + "<a class='page-link' href='#'>2</a></li>" +
-        "<li class='page-item'><a class='page-link' href='#'>3</a></li>" +
-        "<li class='page-item'>" +
-        "<a class='page-link' href='#'>" + "Tiếp theo" + "</a>" +
-        " </li>" +
-        "</ul>"
+    let temp1 = `
+        <ul class="pagination justify-content-center bg-light">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Về trước</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Tiếp theo</a>
+            </li>
+        </ul>
+    `;
 
     for (let i = 0; i < 9; i++) {
+        let temp = `
+            <div class="col-sm-4">
+                <div class="motspchuan">
+                    <a href="chitietsanpham.html" class="duoi" onclick="setMasp(${sp[i].masp})">
+                        <img src="${sp[i].hinhanh}" alt="">
+                        <p class="price_prod">
+                            <span class="price">${sp[i].dongia}<i>VNĐ</i></span>
+                        </p>
+                        <span>${sp[i].tensp}</span>
+                    </a>
+                </div>
+            </div>
+        `;
+
         if (i < 3) {
-            let temp = "<div class='col-sm-4'>" +
-                "<div class='motspchuan'>" +
-                "<a href='chitietsanpham.html' class='duoi' onclick='setMasp(" + sp[i].masp + ")'>" +
-                "	<img  src='" + sp[i].hinhanh + "' alt='' >" +
-                "	<p class='price_prod'>" +
-                "	<span class='price'>" + sp[i].dongia + "<i>" + "VNĐ" + "</i>" + "</span>" +
-                "	</p>" +
-                "	<span>" + sp[i].tensp + "</span>" +
-                "	</a>" +
-                "	</div>" +
-                "	</div>"
-
-            $("#danhsachgucci").append(temp)
-            if (i == 2) $("#xemthemgucci").append(temp1)
+            $("#danhsachgucci").append(temp);
+            if (i == 2) $("#xemthemgucci").append(temp1);
+        } else if (i >= 3 && i < 6) {
+            $("#danhsachchanel").append(temp);
+            if (i == 5) $("#xemthemchanel").append(temp1);
+        } else {
+            $("#danhsachdior").append(temp);
+            if (i == 8) $("#xemthemdior").append(temp1);
         }
-        if (i >= 3 && i < 6) {
-            let temp = "<div class='col-sm-4'>" +
-                "<div class='motspchuan'>" +
-                "<a href='chitietsanpham.html' class='duoi' onclick='setMasp(" + sp[i].masp + ")'>" +
-                "	<img  src='" + sp[i].hinhanh + "' alt='' >" +
-                "	<p class='price_prod'>" +
-                "	<span class='price'>" + sp[i].dongia + "<i>" + "VNĐ" + "</i>" + "</span>" +
-                "	</p>" +
-                "	<span>" + sp[i].tensp + "</span>" +
-                "	</a>" +
-                "	</div>" +
-                "	</div>"
-
-            $("#danhsachchanel").append(temp)
-            if (i == 5) $("#xemthemchanel").append(temp1)
-        }
-        if (i >= 6 && i < 9) {
-            let temp = "<div class='col-sm-4'>" +
-                "<div class='motspchuan'>" +
-                "<a href='chitietsanpham.html' class='duoi' onclick='setMasp(" + sp[i].masp + ")'>" +
-                "	<img  src='" + sp[i].hinhanh + "' alt='' >" +
-                "	<p class='price_prod'>" +
-                "	<span class='price'>" + sp[i].dongia + "<i>" + "VNĐ" + "</i>" + "</span>" +
-                "	</p>" +
-                "	<span>" + sp[i].tensp + "</span>" +
-                "	</a>" +
-                "	</div>" +
-                "	</div>"
-
-            $("#danhsachdior").append(temp)
-            if (i == 8) $("#xemthemdior").append(temp1)
-        }
-
     }
 }
-// Hàm hiển thị các sản phẩm sắp cập nhật ở home
-function HienThiDanhSachSanPhamSapRaMat(spm) {
-    let temp = "<div class='col-sm-4 mottintuc'>" +
-        "<img  src='" + spm.hinhanh + "' class='sp_ramat'>" +
-        " <div class='ngaythang'>" + " " + spm.ngaythang + " trên" + "<span class='vang'>" + "KN-TUIXACHXIN" + "</span>" + "</div>" +
-        "<p class='fontroboto'>" + spm.loai + "</p>" +
-        "<div class='abc'>" +
-        " <a href='chitietsanphamsapcapnhat.html' class='readmore' onclick='setMaspm(" + spm.masp + ")'>" + "Xem ngay" + "</a>" +
-        "</div>" +
-        "</div>"
 
-    $("#danhsachSPM").append(temp)
+// Hàm hiển thị các sản phẩm sắp cập nhật ở home
+
+function HienThiDanhSachSanPhamSapRaMat(spm) {
+    let temp = `
+        <div class="col-md-4">
+            <div class="card mottintuc">
+                <img src="${spm.hinhanh}" class="card-img-top sp_ramat" alt="...">
+                <div class="card-body">
+                    <p class="ngaythang">${spm.ngaythang} trên <span class="vang">KN-TUIXACHXIN</span></p>
+                    <p class="fontroboto">${spm.loai}</p>
+                    <div class="abc">
+                        <a href="chitietsanphamsapcapnhat.html" class="btn btn-warning readmore" onclick="setMaspm(${spm.masp})">Xem ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    $("#danhsachSPM").append(temp);
 }
+
+
 // Hàm hiển thị các sản phẩm sắp ra mắt
 function HienThiSanPhamSapRaMat() {
     let masp = localStorage.getItem("maspm")
@@ -486,7 +471,7 @@ function HienThiSanPhamSapRaMat() {
     let temp = "<div class='tinchitiet'>" +
         "<div class='container'>" +
         "<img src='" + sp.hinhanh + "' style='width: 600px; height: 300px;' alt=''>" +
-        "<div class='ngaythang'>" + sp.ngaythang + " trên" + "<span class='vang'>" + "mtcosmetic@gmail.com" + "</span>" + "</div>" +
+        "<div class='ngaythang'>" + sp.ngaythang + " trên" + "<span class='vang'>" + "ninhtrinh744@gmail.com" + "</span>" + "</div>" +
         "<h2 class='fontroboto ten' style='font-weight: 900'>" + sp.tensp + "</h2>" +
         "<p>" + sp.mota + "</p>" +
 
