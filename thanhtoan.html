@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Giỏ hàng</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="js/bootstrap.css">
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
+
+	<link rel="stylesheet" href="fonts/roboto.css">
+	<link rel="stylesheet" href="fonts/oswald.css">
+	<link rel="stylesheet" href="fonts/dancing.css">
+
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/javascript.js"></script>
+
+
+	<link rel="stylesheet" href="js/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="data.js"></script>
+	<script>
+		$(document).ready(function(){
+			let ktdon=1;
+			$("#click").click(function(){
+				var parent = this.parentElement.parentElement;   
+            	parent.remove();
+				$("#hienthithongtinnguoimua").remove()
+				localStorage.removeItem("sanphamduocmua")
+				$("#tamtinh").html("0VNĐ")
+				$("#tongcong").html("0VNĐ")
+				ktdon=0;
+			})
+			$("#hoantat").click(function(){
+				if(	ktdon==1){alert("Đơn hàng đã được lên và sẽ tới nơi trong thời gian sớm nhất")}
+				else(alert("Đơn hàng chưa hoàn thiện"))
+			})
+		})
+	</script>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    .invoice {
+        margin-top: 30px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    .invoice h3 {
+        margin-top: 0;
+    }
+</style>
+<body>
+	<div class="topheader" id="header">
+
+	</div>
+
+
+	<div class="logovamenu" id="menu">
+
+	</div>
+    <body>
+
+        <div class="container">
+            <h2>Thông tin thanh toán</h2>
+            <img src="./image/Gucci-Diana-Small-Tote-Bag-blue-1.jpg" alt="">
+            <p style="color:red">
+                Tên Sản Phẩm : Gucci-Diana-Small-Tote-Bag-blue-1 <br>
+                Giá : 2.500.000 VNĐ
+            </p>
+            <form id="paymentForm">
+                <div class="form-group">
+                    <label for="name">Tên:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Địa chỉ:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" required>
+                    <small>Vui lòng nhập 10 hoặc 11 chữ số.</small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <input type="submit" value="Thanh toán">
+            </form>
+        
+            <div class="invoice">
+                <h3>Hóa đơn</h3>
+                <p><strong>Tên:</strong> <span id="invoiceName"></span></p>
+                <p><strong>Địa chỉ:</strong> <span id="invoiceAddress"></span></p>
+                <p><strong>Số điện thoại:</strong> <span id="invoicePhone"></span></p>
+                <p><strong>Email:</strong> <span id="invoiceEmail"></span></p>
+            </div>
+        </div>
+        
+        <script>
+            document.getElementById("paymentForm").addEventListener("submit", function (event) {
+                event.preventDefault();
+        
+                // Lấy giá trị từ các trường nhập
+                var name = document.getElementById("name").value;
+                var address = document.getElementById("address").value;
+                var phone = document.getElementById("phone").value;
+                var email = document.getElementById("email").value;
+        
+                // Hiển thị thông tin trong hóa đơn
+                document.getElementById("invoiceName").textContent = name;
+                document.getElementById("invoiceAddress").textContent = address;
+                document.getElementById("invoicePhone").textContent = phone;
+                document.getElementById("invoiceEmail").textContent = email;
+            });
+        </script>
+        
+        </body>
+
+	<div class="footertop wow slideInUp" id="footer">
+
+	</div>
+
+	<div class="footerbottom wow slideInUp">
+		Copyright © 2023. All Rights Reserved
+	</div>
+
+</body>
+
+</html>

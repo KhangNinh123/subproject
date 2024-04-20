@@ -136,7 +136,7 @@ function hienthigiaodien() {
                         <a class="nav-link" href="sitemap.html">Site Map</a>
                     </li>
                     <li class="nav-item dangnhap">
-                        <a class="nav-link btn btn-warning" id="dangky">Đăng nhập/Đăng ký</a>
+                        <a class="nav-link btn btn-success" id="dangky">Đăng nhập/Đăng ký</a>
                     </li>
                     <li class="nav-item cart">
                         <a href="giohang.html" class="nav-link"><i class="fa fa-shopping-cart"></i></a>
@@ -274,41 +274,49 @@ function hienthiDSSP(sp) {
     
 // Hàm hiển thị chi tiết sản phẩm
 function hienthichitietsanpham() {
-    let masp = localStorage.getItem("masp")
-    let sp = ds.find(sp => sp.masp == masp)
-    let temp = " <div class='col-sm-8 produc_img'> " +
+    let masp = localStorage.getItem("masp");
+    let sp = ds.find(sp => sp.masp == masp);
+    let temp = "<div class='col-sm-8 produc_img'>" +
         "<div class='row'>" +
-        "<div class='col-sm-6'> " +
-        "<img src='" + sp.hinhanh + "' alt=''> " +
-        " </div> " +
-        " <div class='col-sm-6'> " +
-        " <div class='detail_tren' style='margin-top: 50px;'>" +
-        " <b class='ten'>" + "Chi tiết sản phẩm:" + "</b>" +
-        " <br> " + " <p class='ten'> " + sp.mota + "</p>"
-        + " </div> " +
-        " </div> " +
-        " </div> " +
-        " </div> " +
-        "<div class='col-sm-4 product_detail' style='margin-top: 30px;'> " +
-        " <div class='tensp'> " +
-        "  <div class='detail_duoi'> " +
-        "<span>" + sp.hang + "</span> " +
-        " </div> " +
-        " <div class='detail_tren'> " +
-        "<b class='ten'>" + sp.tensp + " </b> " +
-        "<br>" + " <p class='ten'>" + sp.dongia + "</p> " +
-        "</div> " +
-        " </div> " +
+        "<div class='col-sm-6'>" +
+        "<img src='" + sp.hinhanh + "' alt=''>" +
+        "</div>" +
+        "<div class='col-sm-6'>" +
+        "<div class='detail_tren' style='margin-top: 50px;'>" +
+        "<b class='ten'>Chi tiết sản phẩm:</b>" +
+        "<br>" +
+        "<p class='ten'>" + sp.mota + "</p>" +
+        "</div>" +
+        "</div>" +
+        "</div>" +
+        "</div>" +
+        "<div class='col-sm-4 product_detail' style='margin-top: 30px;'>" +
+        "<div class='tensp'>" +
+        "<div class='detail_duoi'>" +
+        "Thương hiệu: <span>" + sp.hang + "</span>" +
+        "</div>" +
+        "<div class='detail_duoi'>" +
+        "Năm sản xuất: <span>" + sp.namsx + "</span>" +
+        "</div>" +
+        "<div class='detail_tren'>" +
+        "<b class='ten'>" + sp.tensp + "</b>" +
+        "<br>" +
+        "<p class='ten'>" + sp.dongia + "</p>" +
+        "</div>" +
+        "<div class='quantity'>" +
+        "<label for='quantity'>Số lượng:</label>" +
+        "<input type='number' id='quantity' name='quantity' min='1' value='1'>" +
+        "</div>" +
+        "</div>" +
+        "<div class='btn-group mt-2'>" +
+        "<a href='giohang.html' class=' btn btn-warning' id='themvaogiohang'>Thêm vào giỏ hàng</a>" +
+        "<a href='thanhtoan.html' class=' btn btn-success' id='muangay'>Mua Ngay</a>" +
+        "</div>" +
+        "</div>";
 
-        " <a href='giohang.html' class='checkout btn btn-warning mt-2' id='muahang'>" + "Thêm vào giỏ hàng" + "</a> " +
-        " </div>  "
-
-
-
-    $("#chitietsanpham").append(temp)
-    chuyendulieu()
+    $("#chitietsanpham").append(temp);
+    chuyendulieu();
 }
-
 
 
 // Hàm chuyển dữ liệu
