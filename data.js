@@ -54,9 +54,11 @@ function hienthigiaodien() {
                 </div>
                 
             </div>
+
             <div class="col-sm-3">
-                <div class="timkiem" id="timkiem">
-                    <input type="search" placeholder="Nhập vào từ khóa tìm kiếm " style="width: 280px; height: 30px; background-color: white; color: black;">
+                <div class="search">
+                    <input type="search" placeholder="Search for products" style="width: 280px; height: 30px; background-color: white; color: black;">
+                    <button class="btn btn-primary" style="background-color: white; color: black; margin-bottom:3px; font-size:10px; border-radius: 0;" onclick="search()">Search</button>
                 </div>
             </div>
             <div class="col-sm-1">
@@ -72,6 +74,29 @@ function hienthigiaodien() {
             </div>
         </div>
     </div>`;
+
+    $(".search").css("position", "relative");
+    $(".search").append('<div class="search-icon"><i class="fa fa-search"></i></div>');
+    $(".search-icon").css({
+        "position": "absolute",
+        "top": "50%",
+        "right": "10px",
+        "transform": "translateY(-50%)",
+        "color": "gray",
+        "cursor": "pointer"
+    });
+
+    $(".search-icon").click(function() {
+        $(".search input").focus();
+    });
+
+    $(".search input").on("input", function() {
+        if ($(this).val() !== "") {
+            $(".search-icon").css("color", "black");
+        } else {
+            $(".search-icon").css("color", "gray");
+        }
+    });
     
     let menu = `<nav class="navbar navbar-light bg-faded fontroboto">
         <div class="container">
