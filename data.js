@@ -439,29 +439,31 @@ function hienthisanphamduocmua() {
 
 // Hàm hiển thị các sản phẩm ở home 
 function hienthicacsanpham(sp) {
-
-    let temp = "<div class='col-xs-12 col-sm-6 col-md-4 motsp " + sp.class + "'>" +
-        "<div class='row'> " +
-        "<div class='col-xs-6 col-sm-5'>" +
-        "<div class='anhsp'>" +
-        "<div class='tagnew'>" + "NEW" + "</div>" +
-        "<img src='" + sp.hinhanh + "' alt='' class='img-fluid'>" +
-        "</div>" +
-
-        "</div>" +
-        "<div class='col-xs-6 col-sm-7'>" +
-        "<div class='tensp'>" +
-        "<div class='tren'>" +
-        "<p class='ten'>" + "<a href='chitietsanpham.html' onclick='setMasp(" + sp.masp + ")''>" + "Sản phẩm " + sp.masp + "" + "</a>" + "</p>" +
-        "</div>" +
-        "<div class='duoi'>" + sp.hang + "</div>" +
-        "</div>" +
-        "</div>" +
-        "</div>" +
-        "</div>"
-
-    $("#danhsach").append(temp)
-
+    let temp = `
+        <div class='col-xs-12 col-sm-6 col-md-4 motsp ${sp.class}'>
+            <div class='row'>
+                <div class='col-xs-6 col-sm-5'>
+                    <div class='anhsp' style='border: 1px solid black;'>
+                        <div class='tagnew'>NEW</div>
+                        <img src='${sp.hinhanh}' alt='' class='img-fluid'>
+                    </div>
+                </div>
+                <div class='col-xs-6 col-sm-7'>
+                    <div class='tensp'>
+                        <div class='tren'>
+                            <p class='ten'>
+                                <a href='chitietsanpham.html' onclick='setMasp(${sp.masp})'>
+                                    <span style='color: green'>Xem chi tiết</span>
+                                </a>
+                            </p>
+                        </div>
+                        <div class='duoi'>${sp.hang}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    $("#danhsach").append(temp).css("border", "1px solid black");
 }
 // Hàm hiển thị sản phẩm từng loại
 function HienThiDanhSachTungLoaiSanPham(sp) {
