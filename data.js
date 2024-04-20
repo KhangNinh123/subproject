@@ -271,7 +271,7 @@ function hienthiDSSP(sp) {
 
     $("#danhsachsanpham").append(temp);
 }
-
+    
 // Hàm hiển thị chi tiết sản phẩm
 function hienthichitietsanpham() {
     let masp = localStorage.getItem("masp")
@@ -451,7 +451,7 @@ function HienThiDanhSachSanPhamSapRaMat(spm) {
             <div class="card mottintuc">
                 <img src="${spm.hinhanh}" class="card-img-top sp_ramat" alt="...">
                 <div class="card-body">
-                    <p class="ngaythang">${spm.ngaythang} trên <span class="vang">KN-TUIXACHXIN</span></p>
+                    <p class="ngaythang"> <span class="vang">COMMING SOON</span></p>
                     <p class="fontroboto">${spm.loai}</p>
                     <div class="abc">
                         <a href="chitietsanphamsapcapnhat.html" class="btn btn-warning readmore" onclick="setMaspm(${spm.masp})">Xem ngay</a>
