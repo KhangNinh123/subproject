@@ -185,7 +185,19 @@ function hienthigiaodien() {
                 <div class="opening1">
                     <div class="phai float-xs-right">8:00am - 22:00pm</div>
                     <div class="trai">Everyday</div>
+                    <div class="trai">Monday - Friday</div>
+                    <div class="trai">Saturday - Sunday</div>
+                    <div class="trai">Public Holidays</div>
                 </div>
+            </div>
+            <div class="col-sm-3 cot5">
+                <h2 class="tdfooter">Đăng ký nhận tin</h2>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <button type="add" class="btn btn-primary">Đăng ký</button>
+                </form>
             </div>
         </div>
     </div>`;

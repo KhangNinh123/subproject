@@ -31,10 +31,36 @@
                 HienThiDanhSachSanPhamSapRaMat(spm)
             });
         })
+		function createChatBubble() {
+			// Create a chat bubble element
+			let chatBubble = document.createElement("div");
+			chatBubble.classList.add("chat-bubble");
+	
+			// Add content to the chat bubble
+			let chatBubbleContent = document.createElement("div");
+			chatBubbleContent.classList.add("chat-bubble-content");
+			chatBubbleContent.textContent = "Chat with us";
+	
+			// Append the chat bubble to the body
+			document.body.appendChild(chatBubble);
+	
+			// Append the chat bubble content to the chat bubble
+			chatBubble.appendChild(chatBubbleContent);
+	
+			// Add event listener to open chat window when clicked
+			chatBubble.addEventListener("click", function() {
+				// Open chat window logic goes here
+			});
+		}
+	
+		window.onload = function() {
+			createChatBubble();
+		}
 	</script>
 
 </head>
 <body>
+	
 	<div class="topheader" id="header">
 
 	</div>
@@ -154,6 +180,9 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		
+	</script>
 	<!-- end tintuchome -->
 	<div class="footertop wow slideInUp" id="footer">
 
